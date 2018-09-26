@@ -1,0 +1,30 @@
+{
+    "name": "dgtal/xintel",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.6.*|5.7.*",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "authors": [
+        {
+            "name": "Rodrigo",
+            "email": "rmunoz.coder@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DGtal\\Xintel\\": ""
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DGtal\\Xintel\\XintelServiceProvider"
+            ],
+            "aliases": {
+                "Xintel": "DGtal\\Xintel\\Facades\\Xintel"
+            }
+        }
+    }
+}
